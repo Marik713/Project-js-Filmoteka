@@ -1,0 +1,24 @@
+{{#each this}}
+<li class="list-films__item">
+    <div class="foto-box">
+        <div class="list-films--closeBtn"></div>
+        {{#if poster_path}}
+    <img src="https://image.tmdb.org/t/p/w500/{{poster_path}}" alt="{{original_title}}" data-id="{{id}}"
+    {{else}}
+    <img class="foto-img" src="https://dummyimage.com/400x600/cfcfcf/ffffff&text=NO+IMAGE+AVAILABLE"
+      alt="{{title}}" data-id="{{id}}" />
+    {{/if}}
+    </div>
+    <p class="list-films__item-text">{{original_title}}</p>
+    <p class="list-films__item-text">{{original_name}}</p>
+    <div class="raiting-box">
+        <ul class="list-films__item-ganre-list">
+            {{#each this.genres}}
+            <li class="list-films__item-ganre-list-item"><span>{{this.name}}</span></li>
+            {{/each}}
+        </ul>
+        <p class="list-films__item-jear"><span class="list-films__item-jear-span">|</span>{{release_date}}</p>
+        <p class="list-films__item-rating">{{vote_average}}</p>
+    </div>
+</li>
+{{/each}}

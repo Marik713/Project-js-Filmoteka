@@ -1,0 +1,43 @@
+<div class="container film-view">
+    <div class="film-view__image">
+        <img src="https://image.tmdb.org/t/p/w500/{{poster_path}}" class="foto-img" data-id="{{id}}" alt="">
+    </div>
+    <div class="film-view__description">
+        <h2 class="film-view--name">{{original_title}}</h2>
+        <div class="film-view__descriptions-block">
+            <ul class="film-view__description-items">
+                <li class="film-view__items-link">Vote / Votes</li>
+                <li class="film-view__items-link">Popularity</li>
+                <li class="film-view__items-link">
+                    Original Title
+                </li>
+                <li class="film-view__items-link">Genre</li>
+            </ul>
+            <ul class="film-view__description-value">
+                <li class="film-view__value-link">
+                    <span class="film-view__value-link--orange">{{vote_average}}</span>
+                    /{{vote_count}}
+                </li>
+                <li class="film-view__value-link">{{popularity}}</li>
+                <li class="film-view__value-link">{{original_title}}</li>
+                <li class="film-view__value-link">
+                    <ul>
+                        {{#each genres}}
+                        <li class="film-view__value-link--genres">{{this.name}}</li>
+                        {{/each}}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3 class="film-view--about">About</h3>
+        <p class="film-view--text">{{overview}}</p>
+        <div class="film-view__buttons">
+            <button class="film-view-buttons--watched" type="button">
+                add to Watched
+            </button>
+            <button class="film-view-buttons--queue" type="button">
+                add to queue
+            </button>
+        </div>
+    </div>
+</div>

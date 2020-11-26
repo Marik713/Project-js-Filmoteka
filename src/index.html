@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filmoteka</title>
+</head>
+
+<body>
+    <header class="header header-home">
+        <h1 class="visually-hidden">Filmoteka</h1>
+        <div class="container">
+            <div class="hamburger" id="hamburger-9">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <nav class="page-nav flex">
+                <a class="site-logo" href="#"><img src="images/logo.png" class="logo_img" alt="Логотип" /><span class="logo-text">Filmoteka</span
+            ></a
+          >
+          <ul class="site-navigation is-visible">
+            <li class="site-navigation__item">
+              <a
+                class="site-navigation__link home-js site-navigation__link--active"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link library-js" href="#"
+                >My Library</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <form class="search-form" id="search-form">
+          <input
+            class="home-search"
+            type="text"
+            name="query"
+            autocomplete="off"
+            placeholder="Поиск фильмов"
+          />
+          <span class="home-glass"><img src="images/placeholder.svg" /></span>
+                    </form>
+                    <div class="header-warning is-visible"></div>
+                    <div class="header-buttons is-visible">
+                        <button class="watched button-watched-js is-active">Watched</button>
+                        <button class="queue button-queue-js">Queue</button>
+                    </div>
+        </div>
+        <div class="overlay is-visible">
+            <ul class="site-navigation-on-burger">
+                <li class="site-navigation-on-burger__item">
+                    <a class="site-navigation-on-burger__link site-navigation-on-burger__link-home-js site-navigation-on-burger__link--active" href="#">Home</a
+            >
+          </li>
+          <li class="site-navigation-on-burger__item">
+            <a
+              class="site-navigation-on-burger__link site-navigation-on-burger__link-library-js"
+              href="#"
+              >My Library</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="films">
+        <div class="container films-js">
+          <ul class="list-films"></ul>
+        </div>
+      </section>
+      <section class="film-view-section film-view-js is-visible"></section>
+      <section class="team is-visible">
+        <div class="container">
+          <ul class="team-list" id="team-list"></ul>
+        </div>
+      </section>
+      <section class="profile is-visible" id="profile" data-close="true">
+        <div class="profile__close">
+          <img
+            src="./images/team/close.svg"
+            alt=""
+            class="profile__close-img"
+          />
+        </div>
+      </section>
+      <div class="pagination"></div>
+      <!-- /our-team -->
+    </main>
+    <footer class="footer">
+      <div class="footer-first-part">
+        <p class="footer__text">© 2020 | All Rights Reserved |&nbsp;</p>
+      </div>
+      <div class="footer-second-part">
+        <p class="footer__text">Developed with&nbsp;</p>
+        <img class="footer__icon" src="./images/footer/heart.svg" alt="heart" />
+        <p class="footer__text">&nbsp;by&nbsp;</p>
+        <a href="" class="footer__link" id="footer__link">GoIT Students</a>
+        </div>
+        </footer>
+        <div class="loader-overlay is-visible">
+            <div class="spinner"></div>
+        </div>
+</body>
+
+</html>

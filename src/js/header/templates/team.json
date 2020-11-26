@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Вікторія",
+        "full-name": "Сипухіна Вікторія",
+        "position": "Куратор курсу FeCoreOff1_Lviv",
+        "photo": "https://picua.org/images/2020/11/21/c8b14cb21f22fb0246f88433fa6ca654.th.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Андрій",        
+        "full-name": "Андрій",
+        "position": "Ментор",
+        "photo": "https://picua.org/images/2020/11/24/a478a44edcc8fbae9783b0efef21432e.th.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Іван",
+        "full-name": "Іван Ільченко",
+        "position": "Teamlead",
+        "photo": "https://picua.org/images/2020/11/21/537072463be9f1910fe195d4872d961d.th.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Мар'ян",
+        "full-name": "Мар'ян Лащукевич",
+        "position": "Developer",
+        "photo": "https://picua.org/images/2020/11/22/479b48040ee126ea66958e1006529a10.md.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Володимир",
+        "full-name": "Володимир Молодиня",
+        "position": "Developer",
+        "photo": "https://picua.org/images/2020/11/21/a21357c7bf1d86271ee2a35f756584ce.th.png"
+    },
+    {
+        "id": 6,
+        "name": "Ярослав",
+        "full-name": "Ярослав",
+        "position": "Developer",
+        "photo": "https://picua.org/images/2020/11/21/89fbf2137473170ef2a4de70db05f4a7.th.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Тарас",
+        "full-name": "Мацьків Тарас",
+        "position": "Developer",
+        "photo": "https://picua.org/images/2020/11/21/d71a16b8130a715c69a045f51ddc3b4e.th.jpg"
+    }
+]

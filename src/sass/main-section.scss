@@ -1,0 +1,138 @@
+@media (min-width: 768px) and(max-width:1023px) {
+    .container {
+        max-width: 648px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 918px;
+    }
+}
+
+.foto-box {
+    position: relative;
+}
+
+.list-films {
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &--closeBtn {
+        position: absolute;
+        opacity: 0;
+        top: 10px;
+        right: 10px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(./images/team/close.svg);
+        background-size: contain;
+        transition: transform 0.4s ease-in-out;
+        &:hover,
+         :focus {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+    @media (min-width: 1024px) {
+        max-width: 894px;
+    }
+    // @media (min-width: 600px) and(max-width:925px)
+    @media (min-width: 768px) and(max-width:1023px) {
+        max-width: 618px;
+    }
+    // @media (min-width: 320px) and(max-width:640px)
+    @media (min-width: 320px) and(max-width:767px) {
+        max-width: 280px;
+        padding-top: 20px;
+    }
+    &__item {
+        max-width: 280px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 12px;
+        transition: transform 0.3s linear;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &-ganre-list-item {
+            display: inline-block;
+        }
+        &:focus,
+         :hover.foto-box img {
+            cursor: pointer;
+        }
+        &:focus,
+         :hover .list-films--closeBtn {
+            opacity: 1;
+        }
+        @media (min-width: 320px) and(max-width:767px) {
+            margin: 0;
+            max-width: 280px;
+            margin-bottom: 20px;
+            // &:nth-child(n + 5) {
+            //   display: none;
+            // }
+        }
+        @media (min-width: 768px) and(max-width:1023px) {
+            margin-bottom: 20px;
+            max-width: 294px;
+            // &:last-child {
+            //   display: none;
+            // }
+        }
+        @media (min-width: 1024px) {
+            max-width: 274px;
+            margin-bottom: 30px;
+        }
+        &-text {
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 1px;
+        }
+        &-ganre-list {
+            color: $color-orange;
+            // margin: 0;
+        }
+        &-jear {
+            color: $color-orange;
+            margin: 0;
+            margin-right: 10px;
+        }
+        &-jear-span {
+            margin: 0 3px 0 3px;
+        }
+        &-rating {
+            color: $color-white;
+            position: relative;
+            background: $color-orange;
+            width: 36px;
+            height: 16px;
+            border-radius: 4px;
+            text-align: center;
+            padding-top: 1.9px;
+        }
+    }
+}
+
+.cont-max-width {
+    height: 398px;
+}
+
+.foto-box {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.foto-box img {
+    border-radius: 5px;
+    height: 399px;
+}
+
+.raiting-box {
+    display: flex;
+    align-items: center;
+}
